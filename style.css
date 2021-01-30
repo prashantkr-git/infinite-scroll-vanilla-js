@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading-title {
+    padding: 1rem 0.5rem 0.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #737373;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* height: 100vh; */
+    padding: 1rem;
+    justify-content: center;
+}
+
+.college-card {
+    box-shadow: 0px 2px 4px 0px #aaa;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    min-width: 40rem;
+    margin: 0.8rem 0.5rem;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.college-card .promote-flag {
+    position: absolute;
+    right: -1px;
+    background: #68A7FF;
+    top: -1.2rem;
+    width: 10rem;
+    height: 2.5rem;
+    padding: 0 0 0 0rem;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 13% 49%, 0% 0%);
+}
+
+.college-card .promote-flag p {
+    padding: 0.7rem 1rem 0.8rem 3rem;
+    color: #fff;
+}
+
+.college-card .card-banner {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./college_02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 5px;
+}
+
+.college-card .card-banner .rating {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.college-card .card-banner .rating p {
+    display: inline-block;
+    margin-right: 1rem;
+    text-align: center;
+    background: #F5A626;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.college-card .card-banner .rating p .rating-num {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.college-card .card-banner .quotes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+    padding: 0 1rem;
+}
+
+.college-card .card-banner .quotes p {
+    display: inline-block;
+}
+
+.college-card .card-banner .quotes .quo-Dis p {
+    margin-right: 0.5rem;
+    text-align: center;
+    background: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5rem;
+    text-transform: capitalize;
+}
+
+.college-card .card-banner .quotes .college-rank p {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.college-card .card-content {
+    display: flex;
+    margin: 1rem;
+}
+
+.college-card .card-content .college-details {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.college-card .card-content .college-details .college-info {
+    display: flex;
+    width: 100%;
+}
+
+.college-card .card-content .college-details .college-info .college-name-stars {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.college-card .card-content .college-details .college-info .college-name-stars p {
+    width: 100%;
+    display: block;
+}
+
+.college-card .card-content .college-details .college-info .college-name-stars p .college-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.college-card .card-content .college-details .college-info .college-name-stars p .college-stars {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #444444;
+}
+
+.college-card .card-content .college-details .college-address {
+    display: flex;
+}
+
+
+/* .college-card .card-content .college-details .college-address .address-landmark p {
+    color: #444444;
+}
+
+.college-card .card-content .college-details .college-address .address-distance p {
+    color: #ADADAD;
+} */
+
+.actual-landmark-distance p .secondary-color {
+    font-weight: bold;
+}
+
+.discount-off .actual-off p {
+    display: inline-block;
+    background: #CCF5E7;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: -1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.discount-off .actual-off p a {
+    color: #1999D2;
+    font-weight: bold;
+}
+
+.discount-off .actual-off p .secondary-color {
+    font-weight: bold;
+}
+
+.gray-dark {
+    color: #444444;
+}
+
+.gray-light {
+    color: #ADADAD;
+}
+
+.secondary-color {
+    color: #37B396;
+}
+
+.third-color {
+    color: #444444;
+    font-weight: bold;
+}
+
+.college-card .card-content .college-details .college-address p,
+.college-card .card-content .college-details .actual-address p,
+.college-card .card-content .college-details .discount-off p {
+    margin-top: 0.5rem;
+}
+
+.college-card .card-content .college-details .college-address p {
+    margin-right: 0.2rem;
+}
+
+.college-card .card-content .college-fees-amenities {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.college-card .card-content .college-fees-amenities .fee-discounts {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.college-card .card-content .college-fees-amenities .fee-discounts p:nth-child(1) {
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    margin-right: 0.3rem;
+}
+
+.font-2 {
+    font-size: 0.75rem;
+}
+
+.font-5 {
+    font-size: 0.9rem;
+}
+
+.college-card .card-content .college-fees-amenities .fee-discounts p:nth-child(2) {
+    font-size: 0.75rem;
+    color: #ffffff;
+    background: #DD1C26;
+    padding: 2px 7px 0 4px;
+    margin-top: -0.1rem;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.college-card .card-content .college-fees-amenities .fee-per-semester {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fee-per-semester p:nth-child(1) {
+    font-weight: bold;
+    color: #DD1C26;
+    font-size: 2rem;
+}
+
+.college-card .card-content .college-fees-amenities {
+    margin-bottom: 0.5rem;
+}
+
+.college-card .card-content .college-fees-amenities .college-amenities p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 0.87rem;
+}
